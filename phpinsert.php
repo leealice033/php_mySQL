@@ -11,7 +11,7 @@ $db = new Database();
 $db->connect_db($_DB['host'], $_DB['username'], $_DB['password'],$_DB['dbname']);
 
 /*建立INSERT SQL statement*/
-$sql = "INSERT INTO PEOPLE(NAME, AGE)VALUES ('PHP','15')";
+$sql = "INSERT INTO PEOPLE(NAME, AGE, BIRTHDAY)VALUES ('PHP','15','1995-12-03')";
 $db->runInsert($sql);
 
 /*關閉資料庫連結*/
